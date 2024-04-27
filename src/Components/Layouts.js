@@ -13,9 +13,6 @@ export default function Layouts() {
   const [name, setName] = useState("");
   const [number, setNumber] = useState();
   const [email, setEmail] = useState("");
-  // const [nameError, setNameError] = useState("");
-  // const [numberError, setNumberError] = useState("");
-  // const [emailError, setEmailError] = useState("");
 
   const closeButtonRef = useRef();
 
@@ -37,47 +34,6 @@ export default function Layouts() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-  // const contactUsSubmit = () => {
-  //   let isValid = true;
-
-  //   // Name validation
-  //   if (name === "" || null) {
-  //     setNameError("Please fill Name");
-  //     isValid = false;
-  //   } else {
-  //     setNameError("");
-  //   }
-
-  //   // Number validation
-  //   if (number) {
-  //     if (!number.match("[0-9]{10}")) {
-  //       setNumberError("Please enter a valid phone number");
-  //       isValid = false;
-  //     } else {
-  //       setNumberError("");
-  //     }
-  //   }
-
-  //   // Email validation
-  //   if (email === "" || null) {
-  //     setEmailError("Please fill Email Id");
-  //     isValid = false;
-  //   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email)) {
-  //     setEmailError("Invalid email address");
-  //     isValid = false;
-  //   } else {
-  //     setEmailError("");
-  //   }
-
-  //   if (isValid) {
-  //     try {
-  //       closeButtonRef.current.click();
-  //     } catch (error) {
-  //       console.error("Data not saved:", error);
-  //     }
-  //   }
-  // };
 
   const contactUsSubmit = async () => {
     if (name === "" || null) {
