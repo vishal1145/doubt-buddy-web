@@ -1,38 +1,1484 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+/***************************Color-Combination***************************/
+.main-blue {
+  color: #2454dd;
+}
+.main-gray {
+  color: #333333;
+}
+.main-gray2 {
+  color: #666666;
+}
+.main-black {
+  color: #000000;
+}
+.main-yellow {
+  /* color:#FFC800; */
+  color: #ffd700;
+}
+.main-white {
+  color: #ffffff;
+}
+.main-white2 {
+  color: #ededed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/***************************Containers-features***************************/
+.section-gap {
+  margin-top: 9%;
+}
+.section-gap2 {
+  margin-top: 6%;
+}
+.border {
+  border: 1px solid #ededed;
+  border-radius: 10px;
+}
+.containers {
+  max-width: 1150px;
+  width: 100%;
+}
+.footer-containers {
+  max-width: 1020px;
+  width: 100%;
+}
+.main-heading-size {
+  font-size: 60px;
+  font-weight: bold;
+}
+.heading-size {
+  font-size: 36px;
+  font-weight: bold;
+}
+.heading-size2 {
+  font-size: 24px;
+  font-weight: medium;
+}
+.heading-size3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.content-size-medium {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: medium;
+}
+.content-size-bold {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+.content-size-normal {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
+}
+.content-size-normal2 {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+}
+.subcontent-size-normal {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+}
+.db-design {
+  margin-top: -35px;
+}
+.heading-design-yellow {
+  height: 95px;
+  margin-top: -25px;
+  /* width: 270px; */
+}
+.heading-design-yellow2 {
+  height: 80px;
+  margin-top: -20px;
+  width: 180px;
+}
+.btn:focus {
+  box-shadow: none;
+}
+.btn:hover {
+  color: white;
+}
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+}
+.modal-backdrop {
+  width: auto;
+  height: auto;
+}
+.modal-content {
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
+}
+.cc{
+  margin-bottom:3%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/***************************Navbar-Section***************************/
+.header-nav {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.navbar {
+  padding: 1.7% 0;
+}
+.navbar-nav .nav-item {
+  margin-left: 3%;
+}
+.try {
+  border-radius: 33px;
+  font-weight: 400;
+  background: #2454dd;
+  color: white;
+  padding: 0 16px;
+}
+.try a:hover {
+  color: white;
+}
+.navbar .logo{
+  width:80%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/***************************Home-page-Section***************************/
+.home-page {
+  width: 100%;
+  /* margin-top: 3%; */
+  margin-top: 3%;
+}
+.home-page .rectangle {
+  width: 100%;
+  border-radius: 43px;
+  background: linear-gradient(180deg, #2454dd 0%, #053ee2 100%);
+  position: relative;
+  overflow: hidden;
+}
+.rectangle .div1 {
+  margin: 13% 0% 13% 8%;
+}
+.educational-btn {
+  border: 0.5px solid;
+  border-image-source: linear-gradient(
+    91.51deg,
+    rgba(255, 255, 255, 0.35) 0.16%,
+    rgba(255, 255, 255, 0.15) 85.02%
+  );
+  background: linear-gradient(
+    90.43deg,
+    rgba(255, 255, 255, 0.53) 0.37%,
+    rgba(255, 255, 255, 0.21) 88.15%
+  );
+  border-radius: 33px;
+  color: #ffffff;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  padding: 5px 20px;
+  margin-bottom: 18px;
+}
+.doubt-buddy {
+  margin-top: 20px;
+}
+.round {
+  height: 66px;
+  width: 66px;
+  border: 2px solid white;
+  border-radius: 100px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.download-btn {
+  width: 200px;
+  padding: 15px 5px 15px 5px;
+  border-radius: 12px;
+  background: white;
+  color: #333333;
+  cursor: pointer;
+  z-index: 5;
+}
+.home-page .play-btn-group {
+  margin-top: 50px;
+}
+.download-btn:hover {
+  color: #333333;
+}
+.rectangle .div2 {
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: -8%;
+}
+
+/***************************Ai-buddy-Section***************************/
+.ai-buddy .div1-1 {
+  padding-bottom: 5%;
+}
+.ai-buddy .div2-1 {
+  display: flex;
+  justify-content: end;
+}
+.ai-buddy .div1-2 {
+  margin-bottom: 10%;
+  padding: 4% 5% 6% 4%;
+  margin-right: 5%;
+}
+.ai-buddy .div1-3 {
+  margin-bottom: 10%;
+  padding:4% 5% 6% 4%;
+}
+.ai-buddy .div2-1 .tutor {
+  background-color: #ffd700;
+  border-radius: 50px;
+  padding: 2px;
+  color: #333333;
+  margin-top: 12px;
+}
+.ai-buddy .heading .heading-design-yellow{
+  margin-left:270px;
+}
+.ai-buddy .div2-2 img {
+  width: 95%;
+  margin-top: 7%;
+}
+.ai-buddy .div2-1 .tutor img {
+  width: 30px;
+  height: 30px;
+}
+.ai-buddy .div2-1 .tutor h6{
+  padding:0 15px 0 7px;
+}
+.round4 {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  background-color: white;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/***************************Key-features-Section***************************/
+.key-features {
+  width: 100%;
+}
+.key-fet-img {
+  width: 160px;
+  height: 160px;
+}
+.phone-fet-img {
+  width: 100%;
+  height:auto;
+}
+.phone-div {
+  width: 25%;
+  display: flex;
+  align-items: end;
+}
+.key-fet-div {
+  width: 75%;
+}
+.key-features .card {
+  width: 100%;
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 2%;
+  padding: 2%;
+}
+.key-features .card .content {
+  margin-top: 5%;
+}
+.key-features .content h4 {
+  margin-bottom: 1.3%;
+}
+.key-features .content img {
+  margin-top: 4%;
+}
+.round2 {
+  height: 45px;
+  width: 45px;
+  border-radius: 100px;
+  background-color: #2454dd;
+  color: white;
+  margin-top: -30px;
+}
+.round2 h4 {
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/***************************Offer-Section***************************/
+.offer {
+  width: 100%;
+  background-color: #2454dd;
+  padding: 4% 0;
+  margin-top: 3%;
+}
+
+.offer .card {
+  border-radius: 10px;
+  margin: 40px 0;
+}
+.offer .card .round3 {
+  background-color: #ffd700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 67px;
+  height: 67px;
+  margin-top: -35px;
+}
+
+.offer .card-body {
+  border: none;
+  width: 100%;
+  min-height: 210px;
+  height: 100%;
+  padding: 5% 6% 3% 6%;
+}
+.offer .row {
+  margin-top: 7%;
+}
+
+/***************************Tutorbot-Section***************************/
+.tutorbot {
+  width: 100%;
+}
+.tutorbot .card .div {
+  margin: 18px 0;
+}
+.tutorbot .card {
+  border: none;
+}
+.tutorbot .card-div{
+  margin-top:-70px;
+}
+.yes-tick {
+  width: 36px;
+  height: 36px;
+  margin-right:30px;
+}
+.tutorbot .heading-design-yellow2 {
+  margin-left:690px;
+}
+
+/***************************CG-Api-Section***************************/
+.cg-api {
+  width: 100%;
+  margin: 5% 0;
+}
+.cg-api .card .div {
+  margin: 18px 0;
+}
+.cg-api .card {
+  border: none;
+}
+.cg-api .card-div{
+  margin-top:-80px;
+}
+.cg-api .heading-design-yellow2 {
+  margin-left:240px;
+}
+
+/***************************Better-Section***************************/
+.better {
+  width: 100%;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px;
+}
+
+table td {
+  border: 1px solid #ddd;
+  padding: 0.8% 1.5%;
+}
+table th{
+  border: 1px solid #ddd;
+  padding: 0.6% 1.5%;
+}
+table img {
+  width: 22px;
+  height: 22px;
+}
+table td span {
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: medium;
+}
+.better thead th span {
+  font-size: 24px;
+  font-weight: 510;
+}
+.better thead th .db-img {
+  width: 71px;
+  height: 21px;
+}
+.better thead th .gpt-img {
+  width: 30px;
+  height: 30px;
+}
+.better thead th .llama-img {
+  width: 72px;
+  height: 51px;
+}
+.table-sub-heading {
+  padding-bottom: 1.5%;
+}
+
+/***************************Say-Section***************************/
+.say {
+  background-color: #2454dd;
+  position: relative;
+  width: 100%;
+  padding:4% 0;
+}
+.say .coma1 {
+  position: absolute;
+  top: 15%;
+  left: 3%;
+  width:25%;
+}
+.say .coma2 {
+  position: absolute;
+  top: 15%;
+  right: 3%;
+  width:25%;
+}
+.round3 {
+  height: 90px;
+  width: 90px;
+  border: 4px solid #2454dd;
+  border-radius: 100px;
+  background-color: gray;
+  color: white;
+  margin-top: -53px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.round3-img {
+  height: 90px;
+  width: 90px;
+  border-radius: 100px;
+}
+.rating-star img {
+  margin: 0 5px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+}
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.say .card {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.say .card .name {
+  margin: 25px 0 20px 0;
+}
+.say .card-header {
+  border: none;
+  background: none;
+}
+.say .card-body {
+  border: none;
+  width: 100%;
+  min-height: 185px;
+  height: 100%;
+  padding: 5% 10% 3% 10%;
+}
+
+/***************************Recognition-Section***************************/
+.recognition .row {
+  padding: 3% 0 7% 0;
+}
+.recognition .card {
+  border: none;
+  margin-bottom: 6%;
+}
+
+.recognition .reco-img1 {
+  width: 140px;
+  height: 104px;
+}
+.recognition .reco-img2 {
+  width: 126px;
+  height: 119px;
+}
+.recognition .reco-img3 {
+  width: 316px;
+  height: 84px;
+}
+.recognition .card .card-header {
+  border: none;
+  background-color: white;
+  min-height: 150px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.recognition .card .card-body {
+  min-height: 170px;
+  height: 100%;
+  padding: 0% 5% 4% 5%;
+}
+.recognition .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/***************************Contact-Us-Section***************************/
+.contact-us {
+  background-color: #2454dd;
+  position: relative;
+  padding: 5% 15%;
+}
+.contact-us .contact-pngwing {
+  position: absolute;
+  left: 34%;
+  top: 8%;
+  opacity: 0.2;
+  width: 29vw;
+}
+.contact-us .contact-btn {
+  width: 170px;
+  margin-top: 0%;
+}
+.contact-us .cont-phone-img1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20vw;
+}
+.contact-us .cont-phone-img2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20vw;
+}
+
+/***************************Answer-Instant-Section***************************/
+.answer-instant {
+  background-color: #ffd700;
+  position: relative;
+  width: 100%;
+}
+.answer-instant .div1 {
+  padding: 12% 0;
+}
+.answer-instant .phone img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.answer-instant .answer-design {
+  width: 180px;
+  margin: -30px 0 0 80px;
+}
+.answer-instant .answer-pngwing {
+  position: absolute;
+  margin-top: 35px;
+  margin-left: -50px;
+}
+.app-store h6 {
+  margin-top: 13px;
+}
+.answer-instant .app-store {
+  margin-top: 2%;
+}
+.db-plus-logo {
+  margin-bottom: 6%;
+}
+.coming-soon-img {
+  width: 188px;
+  margin-left: -5px;
+}
+
+/***************************Footer-Section***************************/
+.footer {
+  background-color: #2454dd;
+  width: 100%;
+  padding: 2%;
+}
+.footer a {
+  text-decoration: none;
+  margin: 0 15px;
+  color: white;
+}
+.cg-api {
+  width: 100%;
+  margin: 5% 0;
+}
+
+@media only screen and (min-width: 0) and (max-width: 1150px) {
+  /***************************Containers-Section***************************/
+  .main-heading-size {
+    font-size: 5.2vw;
   }
-  to {
-    transform: rotate(360deg);
+  .heading-size {
+    font-size: 3.1vw;
+  }
+  .heading-size2 {
+    font-size: 2.1vw;
+  }
+  .heading-size3 {
+    font-size: 2vw;
+  }
+  .content-size-medium {
+    font-size: 1.7vw;
+    line-height: 2.6vw;
+  }
+  .content-size-bold {
+    font-size: 1.7vw;
+    line-height: 2.6vw;
+  }
+  .content-size-normal {
+    font-size: 1.7vw;
+    line-height: 2.6vw;
+  }
+  .content-size-normal2 {
+    font-size: 1.4vw;
+    line-height: 30px;
+  }
+  .subcontent-size-normal {
+    font-size: 1.5vw;
+    line-height: 2.6vw;
+  }
+  .heading-design-yellow {
+    height: 8vw;
+    margin-top: -25px;
+  }
+  .heading-design-yellow2 {
+    height: 7vw;
+    margin-top: -20px;
+    width: 16vw;
+  }
+  .db-design {
+    width: 18vw;
+  }
+
+  /***************************Navbar-Section***************************/
+  .navbar-brand .logo {
+    width: 13vw;
+  }
+  /***************************Home-page-Section***************************/
+  .round {
+    height: 50px;
+    width: 50px;
+  }
+  .rectangle .div2 img {
+    width: 65vw;
+  }
+  /***************************Ai-buddy-Section***************************/
+  .ai-buddy .div1-img {
+    width: 8.2vw;
+  }
+  .ai-buddy .div1-h6 {
+    font-size: 1.7vw;
+  }
+  .ai-buddy .div2-1 .tutor h6 {
+    font-size: 1.7vw;
+  }
+  .ai-buddy .heading .heading-design-yellow{
+    margin-left:23vw;
+    margin-top:-2vw;
+  }
+
+  /***************************Key-features-Section***************************/
+  .key-fet-img {
+    width: 14vw;
+    height: 14vw;
+  }
+
+  /***************************Offer-Section***************************/
+  .offer .card-body {
+    min-height: 18vw;
+  }
+
+  /***************************Tutorbot-Section***************************/
+  .tutorbot .card .div {
+    margin: 1.5vw 0;
+  }
+  .tutorbot .heading-design-yellow2{
+    width:15vw;
+    margin-left: 59vw;
+  }
+  .tutorbot .card-div{
+    margin-top:-6vw;
+  }
+  .yes-tick {
+    width: 3.3vw;
+    height: 3.3vw;
+    margin-right:2.5vw;
+  }
+
+  /***************************CG-Api-Section***************************/
+  .cg-api .card .div {
+    margin: 1.5vw 0;
+  }
+  .cg-api .heading-design-yellow2{
+    width:15vw;
+    margin-left: 20vw;
+  }
+  .cg-api .card-div{
+    margin-top:-6vw;
+  }
+
+  /***************************Better-Section***************************/
+  table td {
+    border: 1px solid #ddd;
+    padding: 0.8% 1.5%;
+  }
+  table th{
+    border: 1px solid #ddd;
+    padding: 0.6% 1.5%;
+  }
+  table img {
+    width: 2vw;
+    height: 2vw;
+  }
+  table td span {
+    font-size: 1.5vw;
+    margin-left: 1vw;
+  }
+  .better thead th span {
+    font-size: 2.1vw;
+  }
+  .better thead th .db-img {
+    width: 6.3vw;
+    height: 1.8vw;
+  }
+  .better thead th .gpt-img {
+    width: 2.6vw;
+    height: 2.6vw;
+  }
+  .better thead th .llama-img {
+    width: 6.3vw;
+    height: 3.7vw;
+  }
+  .table-sub-heading {
+    padding-bottom: 1.5%;
+  }
+  /***************************Say-Section***************************/
+
+  .say .heading-size-small {
+    font-size: 5vw;
+  }
+  .say .coma1 {
+    width: 30%;
+  }
+  .say .coma2 {
+    width: 30%;
+  }
+  .say .card-body {
+    min-height: 16vw;
+  }
+
+  /***************************Recognition-Section***************************/
+  .recognition .reco-img1 {
+    width: 11vw;
+    height: auto;
+  }
+  .recognition .reco-img2 {
+    width: 11vw;
+    height: auto;
+  }
+  .recognition .reco-img3 {
+    width: 25vw;
+    height: auto;
+  }
+  .recognition .reco-img4 {
+    width: 20vw;
+    height: auto;
+  }
+
+  /***************************Contact-Us-Section***************************/
+  /***************************Answer-Instant-Section***************************/
+  .answer-instant .answer-design {
+    margin: -30px 0 0 22%;
+    width: 15vw;
+  }
+  .answer-instant .answer-pngwing {
+    width: 35vw;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 992px) {
+  /***************************Containers-Section***************************/
+
+  /***************************Navbar-Section***************************/
+  .navbar-nav .nav-item {
+    text-align: center;
+    margin-left: 0%;
+  }
+  .header-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: white;
+  }
+  .try {
+    padding: 8px 16px;
+  }
+  .navbar-toggler-icon {
+    font-size: 2vw;
+  }
+
+  /***************************Home-page-Section***************************/
+  .home-page {
+    margin-top: 12%;
+  }
+  .home-page .round {
+    height: 40px;
+    width: 40px;
+  }
+  .home-page .round img {
+    height: 40px;
+    width: 40px;
+  }
+  .rectangle .div2 img {
+    width: 62vw;
+  }
+  .download-btn {
+    width: 21vw;
+    padding: 8% 2%;
+  }
+  .play-store-btn {
+    width: 21vw;
+  }
+
+  /***************************Ai-buddy-Section***************************/
+
+  .ai-buddy .div2-1 .tutor img {
+    width: 25px;
+    height: 25px;
+  }
+  .ai-buddy .div2-1 .tutor {
+    padding-right: 1vw;
+  }
+  .round4 {
+    height: 40px;
+    width: 40px;
+  }
+  /***************************Key-features-Section***************************/
+  /***************************Offer-Section***************************/
+  .offer .card-body {
+    min-height: 15vw;
+  }
+  .round2 {
+    margin-top: -28px;
+  }
+  /***************************Tutorbot-Section***************************/
+  /***************************CG-Api-Section***************************/
+  /***************************Better-Section***************************/
+  /***************************Say-Section***************************/
+  .say .card-body .content-size-normal2{
+    font-size:1.6vw;
+  }
+  .say .card-body {
+    min-height: 17vw;
+  }
+  /***************************Recognition-Section***************************/
+
+  /***************************Contact-Us-Section***************************/
+  .contact-us .contact-btn {
+    width: auto;
+    padding: 2% 6%;
+  }
+  .contact-us .heading-design-yellow2{
+    width:18vw;
+  }
+
+  /***************************Answer-Instant-Section***************************/
+  .answer-instant .db-plus-logo {
+    width: 20vw;
+  }
+  .answer-instant .play-store-btn2 {
+    width: 19vw;
+  }
+  .answer-instant .app-store {
+    margin-top: 2.5%;
+  }
+  .coming-soon-img {
+    width: 18.6vw;
+    margin-left: -5px;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  /***************************Containers-Section***************************/
+  .section-gap {
+    margin-top: 5%;
+  }
+  .db-design {
+    width: 18vw;
+  }
+  .db-design-yellow {
+    width: 40vw;
+  }
+
+  /***************************Navbar-Section***************************/
+  /***************************Home-page-Section***************************/
+  .home-page {
+    margin-top: 12.5%;
+  }
+  .home-page .round {
+    height: 40px;
+    width: 40px;
+  }
+  .home-page .round img {
+    height: 40px;
+    width: 40px;
+  }
+  .rectangle .div1 {
+    margin: 13% 10% 13% 10%;
+  }
+  .rectangle .div2 {
+    position: relative;
+    margin-right: 10%;
+  }
+  .rectangle .div2 img {
+    width: 100%;
+  }
+  .download-btn {
+    width: 23vw;
+    font-size: 2vw;
+    padding: 10% 2%;
+  }
+  .play-store-btn {
+    width: 25vw;
+  }
+  .home-page .div1 {
+    display: flex;
+    justify-content: center;
+  }
+  .home-page .play-btn-group {
+    margin-top: 10%;
+  }
+
+  /***************************Ai-buddy-Section***************************/
+  .ai-buddy .div1-1 {
+    padding-bottom: 0px;
+  }
+  .ai-buddy .div1-2 {
+    margin-bottom: 3%;
+    padding: 2%;
+  }
+  .ai-buddy .div1-3 {
+    margin-bottom: 3%;
+    padding: 2%;
+  }
+  .ai-buddy .div2-2 img {
+    margin-top: 2%;
+  }
+  .ai-buddy .div2-1 {
+    display: flex;
+    justify-content: start;
+  }
+  .ai-buddy .db-design-yellow {
+    margin-top: -3vw;
+    width: 25vw;
+    height: 70px;
+  }
+  .ai-buddy .div2-2 img {
+    width: 50%;
+  }
+
+  /***************************Key-features-Section***************************/
+  .key-fet-div {
+    width: 100%;
+  }
+  .key-features .phone-div {
+    display: none;
+  }
+
+  /***************************Offer-Section***************************/
+  .offer .card-body {
+    min-height: 20vw;
+  }
+  .offer .card .round3 {
+    margin-top: -35px;
+  }
+  .offer .card {
+    margin-top: 2vw;
+  }
+  .offer .row {
+    margin-top: 10%;
+  }
+  .offer .card-body .content-size-normal{
+    font-size:2.8vw;
+  }
+
+  /***************************Tutorbot-Section***************************/
+  .tutorbot .row {
+    margin-top: 0%;
+  }
+  .tutorbot .card {
+    margin-bottom: 0;
+  }
+  .tutorbot .db-design-yellow {
+    width: 30vw;
+    margin-top: -4vw;
+  }
+
+  /***************************CG-Api-Section***************************/
+  .cg-api .card {
+    margin-bottom: 0;
+  }
+  .cg-api .row {
+    margin-top: 0%;
+  }
+  .cg-api .db-design-yellow {
+    margin-top: -4vw;
+  }
+
+  /***************************Better-Section***************************/
+  /***************************Say-Section***************************/
+  .swiper {
+    padding: 15% 0 0 0;
+  }
+  .say{
+    padding-bottom:0;
+  }
+  .say .card-body .content-size-normal2{
+    font-size:2vw;
+  }
+  .say .card-body {
+    min-height: 16vw;
+    padding-top:2vw;
+  }
+  .say .card .name{
+    font-size:2.5vw;
+    margin:2.8vw 0 2vw 0;
+  }
+  .say .rating-star img {
+    margin: 0 5px;
+    width:3.2vw;
+  }
+
+  /***************************Recognition-Section***************************/
+  .recognition .card .card-body {
+    min-height: 110px;
+    height: 100%;
+    padding: 0 10%;
+  }
+  .recognition .heading-size3{
+    font-size:2.5vw;
+  }
+  .recognition .content-size-normal{
+    font-size: 2.3vw;
+  }
+  .recognition .card .card-header {
+    margin-bottom: 0;
+  }
+  .recognition .row {
+    padding: 2% 0 3% 0;
+  }
+  .recognition .reco-img1 {
+    width: 15vw;
+    height: auto;
+  }
+  .recognition .reco-img2 {
+    width: 14vw;
+    height: auto;
+  }
+  .recognition .reco-img3 {
+    width: 35vw;
+    height: auto;
+  }
+  .recognition .reco-img4 {
+    width: 30vw;
+    height: auto;
+  }
+
+  /***************************Contact-Us-Section***************************/
+  .contact-us .cont-phone-img1 {
+    width: 25vw;
+  }
+  .contact-us .cont-phone-img2 {
+    width: 27vw;
+  }
+
+  /***************************Answer-Instant-Section***************************/
+  .answer-instant .phone img {
+    position: relative;
+  }
+  .answer-instant .answer-design {
+    margin: -30px 0 0 38vw;
+    width: 25vw;
+  }
+  .answer-instant .answer-pngwing {
+    width: 45vw;
+    margin: 0 0 0 25%;
+  }
+  .answer-instant .div1 button {
+    margin-top: 2%;
+  }
+  .answer-instant .db-plus-logo {
+    width: 26vw;
+  }
+  .answer-instant .play-store-btn2 {
+    width: 25vw;
+  }
+  .answer-instant .app-store {
+    margin-top: 2%;
+  }
+  .coming-soon-img {
+    width: 24.5vw;
+    margin-left: -5px;
+  }
+  .answer-instant .div1 h1{
+    font-size:6vw;
+  }
+  .answer-instant .phone img {
+    width: 90%;
+  }
+  .answer-instant .div1 {
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 575px) {
+  /***************************Container-Section***************************/
+  .heading-size {
+    font-size: 3vw;
+    font-weight: bold;
+  }
+  /***************************Navbar-Section***************************/
+  /***************************Home-page-Section***************************/
+  .home-page .round {
+    height: 30px;
+    width: 30px;
+  }
+  .home-page .round img {
+    height: 30px;
+    width: 30px;
+  }
+  .home-page {
+    margin-top: 16%;
+  }
+  .download-btn {
+    width: 27vw;
+    font-size: 2vw;
+    padding: 10% 2%;
+  }
+  .play-store-btn {
+    width: 29vw;
+  }
+  .home-page .lakh{
+    font-size:2.4vw;
+  }
+
+  /***************************Ai-buddy-Section***************************/
+  .ai-buddy .div2-1 .tutor img {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+  .ai-buddy .div2-1 .tutor h6 {
+    font-size: 2.4vw;
+  }
+  .round4 {
+    height: 7vw;
+    width: 7vw;
+  }
+  .ai-buddy .div2-2 {
+    display: flex;
+    justify-content: center;
+  }
+  .ai-buddy .div2-2 img {
+    width: 70%;
+  }
+
+  .ai-buddy .div-rr{
+    display: flex;
+    flex-direction: column;
+  }
+  .ai-buddy .div1-2{
+    width:100%;
+    margin-right:0;
+    margin-bottom:3vw;
+    padding:2vw;
+    padding-right:16vw;
+  }
+  .ai-buddy .div1-2 h6{
+    font-size:3vw;
+    line-height: 4.5vw;
+  }
+  .ai-buddy .div1-3{
+    width:100%;
+    padding:2vw;
+    padding-right:16vw;
+  }
+  .ai-buddy .div1-3 h6{
+    font-size:3vw;
+    line-height: 4.5vw;
+  }
+
+  /***************************Key-features-Section***************************/
+  .key-fet-img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .key-features .content-size-bold{
+    font-size:3vw;
+    line-height:4vw;
+  }
+  .key-features .subcontent-size-normal{
+    font-size:2.6vw;
+    line-height:4vw;
+  }
+  .round2 {
+    margin-top: -30px;
+  }
+
+  /***************************Offer-Section***************************/
+  .offer .card .round3 {
+    width: 13vw;
+    height: 13vw;
+    margin-top:-6.3vw;
+  }
+
+  /***************************Tutorbot-Section***************************/
+  .tutorbot .card-div{
+    margin-top:0vw;
+  }
+  .yes-tick {
+    width: 4vw;
+    height: 4vw;
+    margin-right:2.5vw;
+  }
+  .tutorbot .content-size-normal{
+    font-size:2.1vw;
+  }
+  .tutorbot .heading-design-yellow2{
+    margin-left: 57vw;
+  }
+  /***************************CG-Api-Section***************************/
+  .cg-api .heading .heading-size{
+    line-height: 2.6vw;
+  }
+  .cg-api .content-size-normal{
+    font-size:2.1vw;
+  }
+  .cg-api .card-div{
+    margin-top:0vw;
+  }
+  /***************************Better-Section***************************/
+  
+  table {
+    width: 540px;
+  }
+  .table-div {
+    overflow-y: auto;
+    -ms-overflow-style: auto;
+    scrollbar-width: auto;
+  }
+  table td {
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+  }
+  table th{
+    border: 1px solid #ddd;
+    padding: 3px 8px;
+  }
+  table img {
+    width: 11.5px;
+    height: 11.5px;
+  }
+  table td span {
+    font-size: 9px;
+    margin-left: 5px;
+  }
+  .better thead th span {
+    font-size: 12px;
+  }
+  .better thead th .db-img {
+    width: 35px;
+    height: 10px;
+  }
+  .better thead th .gpt-img {
+    width: 15px;
+    height: 14px;
+  }
+  .better thead th .llama-img {
+    width: 35px;
+    height: 22px;
+  }
+  .table-sub-heading {
+    padding-bottom: 0.7vw;
+    font-size:10px;
+  }
+  
+
+  /***************************Say-Section***************************/
+  .round3 {
+    width: 16vw;
+    height: 16vw;
+    border: 4px solid #2454dd;
+    border-radius: 100px;
+    background-color: gray;
+    color: white;
+    margin-top: -9.5vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .round3-img {
+    height: 16vw;
+    width: 16vw;
+    border-radius: 100px;
+  }
+  .say .card-body {
+    min-height: 14vw;
+    padding-top:1vw;
+  }
+  /***************************Recognition-Section***************************/
+  .recognition .reco-img1 {
+    width: 25vw;
+    height: auto;
+  }
+  .recognition .reco-img2 {
+    width: 23vw;
+    height: auto;
+  }
+  .recognition .reco-img3 {
+    width: 50vw;
+    height: auto;
+  }
+  .recognition .reco-img4 {
+    width: 42vw;
+    height: auto;
+  }
+  .recognition .card .card-body {
+    min-height: 0px;
+    height: 100%;
+    padding: 0 12vw;
+  }
+  .recognition .card-body .heading-size3{
+    font-size:3.5vw;
+  }
+  .recognition .card-body .content-size-normal{
+    font-size:3vw;
+  }
+
+  /***************************Contact-Us-Section***************************/
+  .contact-us .db-design {
+    margin-top: -5%;
+  }
+
+  /***************************Answer-Instant-Section***************************/
+  .answer-instant .app-store h6 {
+    font-size: 2.5vw;
+  }
+  .answer-instant .play-store-btn2 {
+    width: 28vw;
+  }
+  .coming-soon-img {
+    width: 27.5vw;
+    margin-left: -5px;
+  }
+
+  /***************************Footer-Section***************************/
+  .footer a {
+    margin: 0 6px;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 400px) {
+  .heading-size {
+    font-size: 3.7vw;
+    font-weight: bold;
+  }
+  /***************************Navbar-Section***************************/
+  /***************************Home-page-Section***************************/
+  .download-btn {
+    width: 30vw;
+    font-size: 2.2vw;
+    padding: 9% 2%;
+    border-radius: 7px;
+  }
+  .play-store-btn {
+    width: 32vw;
+  }
+  .home-page .db-design {
+    margin-top: -15px;
+    padding-bottom: 5px;
+  }
+
+  /***************************Ai-buddy-Section***************************/
+  .ai-buddy .heading .heading-design-yellow{
+    margin-left:28vw;
+  }
+  /***************************Key-features-Section***************************/
+
+  /***************************Offer-Section***************************/
+  .offer .card .round3 {
+    margin-top: -25px;
+  }
+  /***************************Tutorbot-Section***************************/
+  .tutorbot .heading-design-yellow2{
+    margin-left: 71vw;
+  }
+  /***************************CG-Api-Section***************************/
+  .cg-api .heading-design-yellow2{
+    margin-left: 25vw;
+  }
+  /***************************Better-Section***************************/
+  /***************************Say-Section***************************/
+  .round3 {
+    margin-top: -38px;
+  }
+  .say .card-body .content-size-normal2{
+    font-size:2.5vw;
+  }
+  .say .card-body {
+    min-height: 20vw;
+    padding-top:0vw;
+
+  }
+  .say .card .name{
+    font-size:2.5vw;
+    margin:2.8vw 0 0vw 0;
+  }
+  
+  /***************************Recognition-Section***************************/
+  .recognition .card .card-body {
+    height: 100%;
+    padding: 0 17%;
+  }
+  
+  /***************************Contact-Us-Section***************************/
+
+  /***************************Answer-Instant-Section***************************/
+  /***************************Footer-Section***************************/
+  .footer a {
+    font-size:4vw;
+  }
+  .footer img{
+    width:5vw;
   }
 }
