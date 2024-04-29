@@ -125,6 +125,15 @@
 .cc{
   margin-bottom:3%;
 }
+pre{ 
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.5; 
+  overflow-x: none;
+  width:100vw;
+  height:auto;
+
+}
 
 /***************************Navbar-Section***************************/
 .header-nav {
@@ -630,6 +639,40 @@ table td span {
 .cg-api {
   width: 100%;
   margin: 5% 0;
+}
+
+/******************************Terms-Policy-Section*******************************/
+.t-p{
+  padding:2vw 4vw;
+  font-family: Poppins, sans-serif;
+}
+.t-p-heading{
+  font-size:24px;
+  font-weight:600;
+  padding:2vw;
+}
+.t-p-content{
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    line-height: 1.13;
+}
+.t-p-subheading{
+  font-size:18px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.numbered-list {
+  list-style-type: decimal;
+  padding:16px 0 0 16px;
+  /* You can also use other numbering styles like 'lower-alpha', 'upper-alpha', 'lower-roman', 'upper-roman', etc. */
+}
+.t-p-content li{
+  margin-bottom:10px;
+}
+.t-p-gap-bottom{
+  margin-bottom:19px;
 }
 
 @media only screen and (min-width: 0) and (max-width: 1150px) {
@@ -1159,6 +1202,11 @@ table td span {
   .answer-instant .div1 {
     padding-bottom: 0;
   }
+  /**************************************Terms-Policy-Section******************************/
+  .t-p-content{
+    text-align: left;
+    line-height: 1.13;
+}
 }
 
 @media only screen and (min-width: 0) and (max-width: 575px) {
@@ -1480,5 +1528,13 @@ table td span {
   }
   .footer img{
     width:5vw;
+  }
+  /*************************************Terms-Policy-Scetion********************************/
+  .t-p{
+    padding:2vw 6vw;
+    font-family: Poppins, sans-serif;
+  }
+  .t-p-gap-bottom{
+    margin-bottom:16px;
   }
 }

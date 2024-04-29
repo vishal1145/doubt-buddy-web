@@ -6,7 +6,6 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-// import { a } from "caniuse-lite/dist/lib/supported";
 
 export default function Layouts() {
   const [slidesPerView, setSlidesPerView] = useState(3);

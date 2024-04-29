@@ -7,13 +7,16 @@ export default function Footer() {
         <div className="d-flex align-items-center">
           <a href="#Contact">Contact</a>
           <a
-            href="https://doubtbuddy.com/privacy-policy"
+            href="/privacy-policy"
             target="_blank"
             rel="noreferrer"
           >
             Policy
           </a>
-          <a href="https://doubtbuddy.com/tnc" target="_blank" rel="noreferrer">
+          <a href="/tnc" 
+          target="_blank" 
+          rel="noreferrer"
+          >
             Terms
           </a>
         </div>
