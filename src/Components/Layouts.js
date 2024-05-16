@@ -47,11 +47,27 @@ export default function Layouts() {
         return;
       } else {
         try {
-          toast.success("Details Save Successfully");
-          closeButtonRef.current.click();
-          setName("");
-          setNumber("");
-          setEmail("");
+          let result = await fetch(`https://prodapi.doubtbuddy.com/sendMail`, {
+            method: "post",
+            body: JSON.stringify({
+              email: email,
+              name: name,
+              mobileNo: number
+            }),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
+          result = await result.json();
+          // let result =true;
+          if(result){
+            toast.success("Details Save Successfully");
+            closeButtonRef.current.click();
+            setName("");
+            setNumber("");
+            setEmail("");
+          }
+          
         } catch (error) {
           toast.error("Data not saved");
         }
@@ -63,11 +79,27 @@ export default function Layouts() {
       return;
     } else {
       try {
-        toast.success("Details Save Successfully");
-        closeButtonRef.current.click();
-        setName("");
-        setNumber("");
-        setEmail("");
+        let result = await fetch(`https://prodapi.doubtbuddy.com/sendMail`, {
+          method: "post",
+          body: JSON.stringify({
+            email: email,
+            name: name,
+            mobileNo: number,
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        result = await result.json();
+        // const result = true;
+        if(result){
+          toast.success("Details Save Successfully");
+          closeButtonRef.current.click();
+          setName("");
+          setNumber("");
+          setEmail("");
+        }
+        
       } catch (error) {
         toast.error("Data not saved");
       }
