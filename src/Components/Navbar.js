@@ -24,10 +24,7 @@ export default function Navbar() {
                 <i className="bi bi-list"></i>
               </span>
             </button>
-            <div
-              className="collapse navbar-collapse"
-              id="navbarNavAltMarkup"
-            >
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="d-flex justify-content-end w-100">
                 <ul className="navbar-nav d-flex justify-content-end w-100">
                   <li className="nav-item">
@@ -39,6 +36,19 @@ export default function Navbar() {
                       Features
                     </a>
                   </li>
+
+                  <li className="nav-item">
+                    <a
+                      className="nav-link main-gray"
+                      aria-current="page"
+                      href="https://doubtbuddy.com/question/"
+                      target="_black"
+                      rel="noreferrer"
+                    >
+                      Questions
+                    </a>
+                  </li>
+
                   <li className="nav-item">
                     <a
                       className="nav-link main-gray"
